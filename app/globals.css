@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+/* Rebix brand tokens (same values as the mobile app's src/theme/colors.ts). */
+@theme {
+  --color-primary-50: #eaf6f0;
+  --color-primary-100: #d0ebdd;
+  --color-primary-200: #a6d7bf;
+  --color-primary-300: #76be9e;
+  --color-primary-400: #3fa47d;
+  --color-primary-500: #087f5b;
+  --color-primary-600: #06704f;
+  --color-primary-700: #055f43;
+  --color-primary-800: #044d37;
+  --color-primary-900: #033b2a;
+
+  --color-ink-50: #f7f9f8;
+  --color-ink-100: #eff2f0;
+  --color-ink-200: #dee4e1;
+  --color-ink-300: #c4cdc8;
+  --color-ink-400: #929d97;
+  --color-ink-500: #65716b;
+  --color-ink-600: #47534d;
+  --color-ink-700: #343d38;
+  --color-ink-800: #222925;
+  --color-ink-900: #111613;
+
+  --font-sans: var(--font-geist-sans), system-ui, sans-serif;
+}
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  background: var(--color-ink-50);
+  color: var(--color-ink-900);
+  font-family: var(--font-sans);
+}
+
+button:not(:disabled),
+[role="button"] {
+  cursor: pointer;
+}
